@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Игорь Басихин](https://up.htmlacademy.ru/htmlcss/24/user/973815).
-* Наставник: [Артём Рудов](https://up.htmlacademy.ru/htmlcss/24/user/345377).
+* Студент: [Игорь Басихин](https://htmlacademy.ru/profile/id973815).
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/id345377).
 
 ---
 
