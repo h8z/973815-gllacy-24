@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Магазин мороженого «Глэйси»</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -11,8 +11,8 @@
     <header class="main-header">
       <!-- Логотип -->
       <div class="main-logo">
-        <a class="main-header-logo"> <!-- Специально без ссылки для index -->
-          <img src="index-gllacy-logo.svg" width="225" height="100" alt="Логотип «Глэйси»">
+        <a class="main-header-logo">
+          <img src="img/index-gllacy-logo.svg" width="225" height="100" alt="Логотип «Глэйси»">
         </a>
       </div>
       
@@ -33,19 +33,15 @@
       </div>
 
       <!-- Время работы, телефон -->
-      <div class="working-hours-phone">
-        <p class="working-hours">C 10 до 20, ежедневно</p>
-        <p class="phone">8 812 450-25-25</p>
-      </div>
+      <p class="working-hours-phone">
+        C 10 до 20, ежедневно
+        <a class="phone" href="#" title="Телефон магазина">8 812 450-25-25</a>
+      </p>
 
     </header>
 
     <!-- Мейн -->
     <main class="container">
-
-      <!-- Здесь будут слайды -->
-      <section class="slides">
-      </section>
 
       <!-- Здесь будут акции -->
       <section class="offers">
@@ -53,27 +49,13 @@
         <article class="offer-right"></article>
       </section>
 
-      <!-- Здесь будут "хиты" -->
-      <section class="bestsellers">
-      </section>
-
       <!-- Раздел "Преимущества" -->
       <section class="advantages">
-        <h3>Магазин Глэйси это — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-        <div class="abvantages-item">
-          <p class="abvantages-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        </div>
-        <div class="abvantages-item">
-          <p class="abvantages-natural">Для приготовления мороженого используется настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        </div>
-        <div class="abvantages-item">
-          <p class="abvantages-cow">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        </div>
-        <div class="abvantages-item">
-          <p class="abvantages-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-        </div>
-      </section>
-        
+        <h3 class ="advantages-title">Магазин Глэйси это — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+        <p class="abvantages-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <p class="abvantages-natural">Для приготовления мороженого используется настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        <p class="abvantages-cow">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        <p class="abvantages-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </section>
 
       <!-- Раздел блога-->
@@ -87,34 +69,29 @@
       <!-- Подпишись на рассылку:) -->
       <section class="mailing">
         <p class="mailing-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и слать всякой ненужной ерунды. Честно =)</p>
-        <form><!-- Здесь будет форма --></form>
+        <!-- Здесь будет форма -->
       </section>
 
-      <!-- Здесь будет карта -->
     </main>
 
     <!-- Футер -->
     <footer class="main-footer">
       
       <!-- Кнопки социальных сетей -->
-      <div class="footer-social">
-        <ul>
-          <li class="footer-social-btn"><a href="#">Твиттер</a></li>
-          <li class="footer-social-btn"><a href="#">Инстаграм</a></li>
-          <li class="footer-social-btn"><a href="#">Фейсбук</a></li>
-          <li class="footer-social-btn"><a href="#">Вконтакте</a></li>
-        </ul>
-      </div>
+      <ul class="footer-social">
+        <li class="footer-social-btn"><a href="#">Твиттер</a></li>
+        <li class="footer-social-btn"><a href="#">Инстаграм</a></li>
+        <li class="footer-social-btn"><a href="#">Фейсбук</a></li>
+        <li class="footer-social-btn"><a href="#">Вконтакте</a></li>
+      </ul>
 
       <!-- Меню по центру футера -->
-      <section class="footer-menu">
-        <ul class="footer-menu-list">
-          <li><a class="footer-menu-list" href="#">Для поставщиков</a></li>
-          <li><a class="footer-menu-list" href="#">О производстве</a></li>
-          <li><a class="footer-menu-list" href="#">Наши документы</a></li>
-          <li><a class="footer-menu-list" href="#">Экологические стандарты</a></li>
+        <ul class="footer-menu">
+          <li><a class="footer-menu-item" href="#">Для поставщиков</a></li>
+          <li><a class="footer-menu-item" href="#">О производстве</a></li>
+          <li><a class="footer-menu-item" href="#">Наши документы</a></li>
+          <li><a class="footer-menu-item" href="#">Экологические стандарты</a></li>
         </ul>
-      </section>
 
       <!-- Копирайт -->
       <p class="footer-copyright">
