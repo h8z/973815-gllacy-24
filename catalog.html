@@ -10,32 +10,30 @@
     <!-- Шапка сайта -->
     <header class="main-header">
       <!-- Логотип -->
-      <div class="main-logo">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/index-gllacy-logo.svg" width="225" height="100" alt="Логотип «Глэйси»">
-        </a>
-      </div>
+      <a class="main-header-logo" href="index.html">
+        <img class="main-header-logo-img" src="img/index-gllacy-logo.svg" width="225" height="100" alt="Логотип «Глэйси»">
+      </a>
       
       <!-- Кнопки навигации -->
       <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
-          <li><a href="payment-delivery.html">Доставка и оплата</a></li>
-          <li><a href="contacts.html">О компании</a></li>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item" class="main-navigation-current"><a class="main-navigation-link" href="catalog.html">Каталог</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="payment-delivery.html">Доставка и оплата</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="contacts.html">О компании</a></li>
         </ul>
       </nav>
 
       <!-- Кнопки поиск, логин, корзина -->
       <div class="user-navigation">
-        <a class="search-link" href="#" title="Поиск"></a>
-        <a class="login-link" href="#" title="Вход"></a>
-        <a class="basket-link" href="#" title="Корзина"></a>
+        <a class="user-navigation-search" href="#" title="Поиск"></a>
+        <a class="user-navigation-login" href="#" title="Вход"></a>
+        <a class="user-navigation-basket" href="#" title="Корзина"></a>
       </div>
 
       <!-- Время работы, телефон -->
-      <p class="working-hours-phone">
+      <p class="working-hours">
         C 10 до 20, ежедневно
-        <a class="phone" href="#" title="Телефон магазина">8 812 450-25-25</a>
+        <a class="working-hours-phone" href="#" title="Телефон магазина">8 812 450-25-25</a>
       </p>
 
     </header>
@@ -46,14 +44,14 @@
 
         <!-- Хлебные крошки -->
         <ul class="breadcrumbs">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a class="breadcrumbs-current" href="#">Сливочное</a></li>
+          <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
+          <li><a class="breadcrumbs-item" href="#">Каталог</a></li>
+          <li><a class="breadcrumbs-item" class="breadcrumbs-current" href="#">Сливочное</a></li>
         </ul>
 
         <!-- Фильтры -->
         <section class="filters">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <h2 class="filters-header visually-hidden">Фильтр товаров</h2>
           <!-- Здесь будет форма -->
         </section>
 
@@ -192,18 +190,18 @@
       
       <!-- Кнопки социальных сетей -->
       <ul class="footer-social">
-        <li class="footer-social-btn"><a href="#">Твиттер</a></li>
-        <li class="footer-social-btn"><a href="#">Инстаграм</a></li>
-        <li class="footer-social-btn"><a href="#">Фейсбук</a></li>
-        <li class="footer-social-btn"><a href="#">Вконтакте</a></li>
+        <li class="footer-social-btn"><a class="footer-social-link" href="#">Твиттер</a></li>
+        <li class="footer-social-btn"><a class="footer-social-link" href="#">Инстаграм</a></li>
+        <li class="footer-social-btn"><a class="footer-social-link" href="#">Фейсбук</a></li>
+        <li class="footer-social-btn"><a class="footer-social-link" href="#">Вконтакте</a></li>
       </ul>
   
       <!-- Меню по центру футера -->
       <ul class="footer-menu">
-        <li><a class="footer-menu-item" href="#">Для поставщиков</a></li>
-        <li><a class="footer-menu-item" href="#">О производстве</a></li>
-        <li><a class="footer-menu-item" href="#">Наши документы</a></li>
-        <li><a class="footer-menu-item" href="#">Экологические стандарты</a></li>
+        <li class="footer-menu-item"><a class="footer-menu-link" href="#">Для поставщиков</a></li>
+        <li class="footer-menu-item"><a class="footer-menu-link" href="#">О производстве</a></li>
+        <li class="footer-menu-item"><a class="footer-menu-link" href="#">Наши документы</a></li>
+        <li class="footer-menu-item"><a class="footer-menu-link" href="#">Экологические стандарты</a></li>
       </ul>
   
       <!-- Копирайт -->
