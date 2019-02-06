@@ -237,18 +237,20 @@
     <!-- Модальное окно обратной связи -->
     <section class="feedback feedback-visible">
       <h2>Мы обязательно вам ответим!</h2>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-item">
           <label class="feedback-name">
-            <input class="modal-name-field" type="text" name="name" placeholder="Как вас зовут?">
+            <input class="feedback-name-field" type="text" name="name" placeholder="Как вас зовут?">
           </label>
         </p>
         <p class="feedback-item">
           <label class="feedback-email">
-            <input class="modal-email-field" type="email" name="email" placeholder="Ваша почта для ответа?">
+            <input class="feedback-email-field" type="email" name="email" placeholder="Ваша почта для ответа?">
           </label>
         </p>
-        <textarea class="feedback-message" rows="5" name="message" placeholder="Напишите что-нибудь..."></textarea>
+          <label class="feedback-message">
+        <textarea class="feedback-message-area" rows="5" name="message" placeholder="Напишите что-нибудь..."></textarea>
+          </label>
         <button class="btn feedback-btn" type="submit">Отправить</button>
       </form>
       <button class="feedback-close-btn" type="button">Закрыть</button>
