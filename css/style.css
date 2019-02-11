@@ -1,0 +1,364 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #8ba596;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* Меню навигации */
+.main-navigation-list li {
+  list-style: none;
+}
+
+.main-navigation-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.main-navigation-current .main-navigation-link {
+  background-color: #d07058;
+}
+
+.catalog-subnav-item-link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+  font-weight: 400;
+}
+
+.catalog-subnav-current a {
+  background-color: #d07058;
+  color: #ffffff;
+}
+
+/* Подсветка ссылок в шапке при наведении */
+.mainlink-highlight:hover,
+.mainlink-highlight:focus {
+  color: #333333;
+  background-color: #f7f6f3;
+  border-radius: 15px;
+}
+
+/* Подсветка при наведении/нажатии на ссылку подменю */
+.catalog-subnav-item-link:hover,
+.catalog-subnav-item-link:focus {
+  background-color: #fbded8;
+}
+
+.catalog-subnav-item-link:active {
+  background-color: #f6b5a5;
+}
+
+/* Подсветка ссылок при наведении */
+.link-highlight:hover,
+.link-highlight:focus {
+  color: #ffbc9e;
+}
+
+/* Подчеркивания ссылок */
+.link-highlight,
+.mainlink-highlight {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Корзина */
+.login-view,
+.cart-view {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.cart-item-img {
+  border-radius: 50%
+}
+
+/* Часы работы, телефон */
+.workinghours {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.workinghours-phone {
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Специальные предложения */
+.special-offers {
+  font-weight: 700;
+}
+
+.special-offers-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.special-offers-desc {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.special-offers a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.special-offers-raspberry {
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+
+  background-color: #6e1a2a;
+  background-image: url("../img/raspberry-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.special-offers-chokolate {
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+
+  background-color: #40261a;
+  background-image: url("../img/chocolate-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Хлебные крошки */
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* Бестселлеры & Каталог товаров */
+.catalog-item-link {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item-price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.catalog-item-price .sub {
+  font-size: 30px;
+  line-height: 45px;
+  vertical-align: sub;
+  font-weight: 700;
+}
+
+.catalog-item-photo {
+  border-radius: 50%;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Преимущества */
+.advantages {
+  width: 1146px;
+  height: 306px;
+  border-radius: 15px;
+  
+  background-color: #eee2c9;
+  background-image: url("../img/waffle-background.jpg");
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.advantages-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+}
+
+/* Раздел блога */
+.blog {
+  width: 560px;
+  height: 220px;
+  border-radius: 15px;
+  
+  background-color: #ffffff;
+  background-image: url("../img/strawberry-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blog-header {
+  color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.blog-desc-link {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.blog-desc-link:hover {
+  color: #e84d37;
+}
+
+/* Подписка на рассылку */
+.subscribe {
+  width: 560px;
+  height: 220px;
+  border-radius: 15px;
+
+  background-color: #f8f7f4;
+  background-image: url("../img/mail-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.subscribe-desc {
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+/* Кнопки социальных сетей */
+.footer-social {
+  list-style: none;
+}
+
+/* Меню по центру футера */
+.footer-menu {
+  list-style: none;
+}
+
+.footer-menu-link {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footer-menu-supply .footer-menu-link {
+  font-weight: 700;
+}
+
+/* Копирайт */
+.footer-copyright{
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footer-copyright-link {
+  color: #ffffff;
+}
+
+/* Кнопки */
+.btn {
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0px 2px 2px 0 #ac1000;
+  background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+
+.btn:active {
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+}
+
+/* Пока спрячу это здесь */
+
+.feedback {
+  display: none;
+}
+
+.login-form {
+  display: none;
+}
+
+.search-form {
+  display: none;
+}
+
+.pagination-list {
+  display: none;
+}
+
+.filters {
+  display: none;
+}
+
+.cart-table {
+  display: none;
+}
+
+.cart-checkout {
+    display: none;
+}
