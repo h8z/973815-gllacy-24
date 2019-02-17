@@ -148,7 +148,10 @@
           <fieldset class="filters-sorting">
             <legend class="filters-sorting-legend">Сортировка</legend>
             <select class="filters-sorting-select" name="filters-sorting">
-              <option value="popularity">По популярности</option>
+              <option value="popularity">по популярности</option>
+              <option value="inexpensive">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat-content">по жирности</option>
             </select>
           </fieldset>
           <!-- Радио-баттон жирности -->
@@ -341,13 +344,13 @@
 
         <!-- Пагинация -->
         <ul class="pagination-list">
-          <li class="pagination-item pagination-prev pagination-disabled"><a class="pagination-link" href="#"></a></li>
+          <li class="pagination-item pagination-prev pagination-disabled"><a class="pagination-link" href="#">&#60;</a></li>
           <li class="pagination-item pagination-current"><a class="pagination-link" href="#">1</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
-          <li class="pagination-item pagination-next"><a class="pagination-link" href="#"></a></li>
+          <li class="pagination-item pagination-next"><a class="pagination-link" href="#">&#62;</a></li>
         </ul>
 
       </section>
