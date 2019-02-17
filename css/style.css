@@ -60,7 +60,7 @@ a {
   color: inherit;
 }
 
-/* Подсветка ссылок в шапке при наведении */
+/* Подсветка ссылок в шапке при наведении/нажатии */
 .mainlink-highlight:hover,
 .mainlink-highlight:focus {
   padding: 5px;
@@ -68,6 +68,11 @@ a {
   color: #333333;
   background-color: #f7f6f3;
   border-radius: 15px;
+}
+
+.mainlink-highlight:active {
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
 }
 
 /* Подсветка при наведении/нажатии на ссылку подменю */
@@ -175,6 +180,64 @@ a {
   color: inherit;
 }
 
+/* Фильтры */
+.filters {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filters legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters-sorting-select {
+  padding: 5px 20px 5px 8px;
+
+  color: inherit;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 25px;
+}
+
+.filters-sorting-select:hover {
+  color: #323232;
+}
+
+.filters-submit {
+  padding: 8px 28px;
+
+  color: inherit;
+  font-weight: 500;
+
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  cursor: pointer;
+}
+
+.filters-submit:hover,
+.filters-submit:focus {
+  color: #323232;
+  
+  background-color: #ffffff;
+}
+
+.filters-submit:active {
+  padding: 10px 30px;
+  
+  border: 0;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+}
+
 /* Бестселлеры & Каталог товаров */
 .catalog-list {
   list-style: none;
@@ -202,6 +265,34 @@ a {
 
 .catalog-item-photo {
   border-radius: 50%;
+}
+
+/* Кнопки пагинации */
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-link {
+  padding: 5px 10px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: inherit;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.pagination-disabled .pagination-link {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-current .pagination-link {
+  color: #323232;
+
+  background-color: #ffffff;
 }
 
 .pagination-link:hover,
@@ -361,18 +452,10 @@ a {
   display: none;
 }
 
-.pagination-list {
-  display: none;
-}
-
-.filters {
-  display: none;
-}
-
 .cart-table {
   display: none;
 }
 
 .cart-checkout {
-    display: none;
+  display: none;
 }
