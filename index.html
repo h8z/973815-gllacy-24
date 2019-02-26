@@ -15,84 +15,87 @@
       <a class="main-header-logo">
         <img class="main-header-logo-img" src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип Магазина «Глэйси»">
       </a>
+      
+      <div class="topmenu-wrapper">
+        <!-- Кнопки навигации -->
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item main-navigation-sublink">
+              <a class="main-navigation-link mainlink-highlight" href="catalog.html">Каталог</a>
+              <!-- Подменю кнопки каталог -->
+              <ul class="catalog-subnav">
+                <li class="catalog-subnav-item">
+                  <a class="catalog-subnav-item-link" href="#">
+                    <span class="new-icecream">Новинки</span>
+                  </a>
+                </li>
+                <li class="catalog-subnav-item">
+                  <a class="catalog-subnav-item-link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="catalog-subnav-item">
+                  <a class="catalog-subnav-item-link" href="#">Щербеты</a>
+                </li>
+                <li class="catalog-subnav-item">
+                  <a class="catalog-subnav-item-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="catalog-subnav-item">
+                  <a class="catalog-subnav-item-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link mainlink-highlight" href="payment-delivery.html">Доставка и оплата</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link mainlink-highlight" href="contacts.html">О Компании</a>
+            </li>
+          </ul>
+        </nav>
 
-      <!-- Кнопки навигации -->
-      <nav class="main-navigation">
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item main-navigation-sublink">
-            <a class="main-navigation-link mainlink-highlight" href="catalog.html">Каталог</a>
-            <!-- Подменю кнопки каталог -->
-            <ul class="catalog-subnav">
-              <li class="catalog-subnav-item">
-                <a class="catalog-subnav-item-link" href="#">
-                  <span class="new-icecream">Новинки</span>
-                </a>
-              </li>
-              <li class="catalog-subnav-item">
-                <a class="catalog-subnav-item-link" href="catalog.html">Сливочное</a>
-              </li>
-              <li class="catalog-subnav-item">
-                <a class="catalog-subnav-item-link" href="#">Щербеты</a>
-              </li>
-              <li class="catalog-subnav-item">
-                <a class="catalog-subnav-item-link" href="#">Фруктовый лед</a>
-              </li>
-              <li class="catalog-subnav-item">
-                <a class="catalog-subnav-item-link" href="#">Мелорин</a>
-              </li>
-            </ul>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link mainlink-highlight" href="payment-delivery.html">Доставка и оплата</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link mainlink-highlight" href="contacts.html">О компании</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Поиск -->
-      <div class="search">
-        <a class="search-view mainlink-highlight" href="#">
-          <span class="visually-hidden">Поиск</span>
-        </a>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="search-form-label">
-            <input class="search-form-field" type="search" name="search" placeholder="Что ищем?">
-          </label>
-        </form>
-      </div>
-
-      <!-- Авторизация -->
-      <div class="login">
-        <a class="login-view mainlink-highlight" href="#">Вход</a>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="login-form-item">
-            <label class="login-form-label">
-              <input class="login-form-field" type="email" name="login-email" placeholder="Электронная почта">
+      
+        <!-- Поиск -->
+        <div class="search">
+          <a class="search-view mainlink-highlight" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="search-form-label">
+              <input class="search-form-field" type="search" name="search" placeholder="Что ищем?">
             </label>
-          </p>
-          <p class="login-form-item">
-            <label class="login-form-label">
-              <input class="login-form-field" type="password" name="login-password" placeholder="Пароль">
-            </label>
-          </p>
-          <button class="btn login-btn" type="submit">Войти</button>
-          <p class="login-form-links">
-            <a class="login-form-forgot link-highlight" href="#">Забыли пароль?</a>
-            <a class="login-form-signup link-highlight" href="#">Новая регистрация</a>
-          </p>
-        </form>
-      </div>
+          </form>
+        </div>
 
-      <!-- Корзина -->
-      <div class="cart">
-        <a class="cart-view mainlink-highlight" href="#">Пусто</a>
+        <!-- Авторизация -->
+        <div class="login">
+          <a class="login-view mainlink-highlight" href="#">Вход</a>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="login-form-item">
+              <label class="login-form-label">
+                <input class="login-form-field" type="email" name="login-email" placeholder="Электронная почта">
+              </label>
+            </p>
+            <p class="login-form-item">
+              <label class="login-form-label">
+                <input class="login-form-field" type="password" name="login-password" placeholder="Пароль">
+              </label>
+            </p>
+            <button class="btn login-btn" type="submit">Войти</button>
+            <p class="login-form-links">
+              <a class="login-form-forgot link-highlight" href="#">Забыли пароль?</a>
+              <a class="login-form-signup link-highlight" href="#">Новая регистрация</a>
+            </p>
+          </form>
+        </div>
+
+        <!-- Корзина -->
+        <div class="cart">
+          <a class="cart-view mainlink-highlight" href="#">Пусто</a>
+        </div>
       </div>
 
       <!-- Время работы, телефон -->
       <p class="workinghours">
-        C 10 до 20, ежедневно
+        C 10 до 20, ежедневно<br/>
         <a class="workinghours-phone link-highlight" href="#" aria-label="Телефон магазина">8 812 450-25-25</a>
       </p>
 
@@ -171,7 +174,7 @@
       <!-- Раздел "Преимущества" -->
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages-title">Магазин Глэйси это — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+        <p class="advantages-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul class="advantages-list">
           <li class="abvantages-item abvantages-modern">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
           <li class="abvantages-item abvantages-natural">Для приготовления мороженого используется настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</li>
@@ -180,24 +183,28 @@
         </ul>
       </section>
 
-      <!-- Раздел блога-->
-      <article class="blog">
-        <h3 class="blog-header">Новое в нашем блоге</h3>
-        <p class="blog-desc">
-          <a class="link-highlight blog-desc-link" href="#">10 Способов сервировки фруктовых щербетов к столу</a>
-        </p>
-      </article>
+      <div class="columns-blog-subscribe">
+        <!-- Раздел блога-->
+        <article class="blog">
+          <h3 class="blog-header">Новое в нашем блоге</h3>
+          <p class="blog-desc">
+            <a class="link-highlight blog-desc-link" href="#">10 Способов сервировки фруктовых щербетов к столу</a>
+          </p>
+        </article>
 
-      <!-- Подпишись на рассылку:) -->
-      <section class="subscribe">
-        <h3 class="visually-hidden">Подписаться на рассылку</h3>
-          <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и слать всякой ненужной ерунды. Честно =)</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
-            <input class="subscribe-field" type="email" id="subscribe-email" name="email" placeholder="Электронная почта">
-            <button class="btn subscribe-btn" type="submit">Отправить</button>
-          </form>
-      </section>
+        <!-- Подпишись на рассылку:) -->
+        <section class="subscribe">
+          <h3 class="visually-hidden">Подписаться на рассылку</h3>
+            <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и слать всякой ненужной ерунды. Честно =)</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+              <input class="subscribe-field" type="email" id="subscribe-email" name="email" placeholder="Электронная почта">
+              <button class="btn subscribe-btn" type="submit">Отправить</button>
+            </form>
+        </section>
+      </div>
+
+      <div class="map"></div>
 
     </main>
 
@@ -207,16 +214,16 @@
       <!-- Кнопки социальных сетей -->
       <ul class="footer-social">
         <li class="footer-social-icon">
-          <a class="footer-social-link" href="#"><span class="twitter visually-hidden">Твиттер</span></a>
+          <a class="footer-social-link" href="#"><span class="twitter">Твиттер</span></a>
         </li>
         <li class="footer-social-icon">
-          <a class="footer-social-link" href="#"><span class="instagram visually-hidden">Инстаграм</span></a>
+          <a class="footer-social-link" href="#"><span class="instagram">Инстаграм</span></a>
         </li>
         <li class="footer-social-icon">
-          <a class="footer-social-link" href="#"><span class="facebook visually-hidden">Фейсбук</span></a>
+          <a class="footer-social-link" href="#"><span class="facebook">Фейсбук</span></a>
         </li>
         <li class="footer-social-icon">
-          <a class="footer-social-link" href="#"><span class="vkontakte visually-hidden">Вконтакте</span></a>
+          <a class="footer-social-link" href="#"><span class="vkontakte">Вконтакте</span></a>
         </li>
       </ul>
 

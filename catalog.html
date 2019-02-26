@@ -7,7 +7,7 @@
     <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
 
     <!-- Шапка сайта -->
     <header class="main-header">
@@ -16,6 +16,7 @@
         <img class="main-header-logo-img" src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип Магазина «Глэйси»">
       </a>
 
+      <div class="topmenu-wrapper">
       <!-- Кнопки навигации -->
       <nav class="main-navigation">
         <ul class="main-navigation-list">
@@ -46,83 +47,84 @@
             <a class="main-navigation-link mainlink-highlight" href="payment-delivery.html">Доставка и оплата</a>
           </li>
           <li class="main-navigation-item">
-            <a class="main-navigation-link mainlink-highlight" href="contacts.html">О компании</a>
+            <a class="main-navigation-link mainlink-highlight" href="contacts.html">О Компании</a>
           </li>
         </ul>
       </nav>
 
-      <!-- Поиск -->
-      <div class="search">
-        <a class="search-view mainlink-highlight" href="#">
-          <span class="visually-hidden">Поиск</span>
-        </a>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="search-form-label">
-            <input class="search-form-field" type="search" name="search" placeholder="Что ищем?">
-          </label>
-        </form>
-      </div>
-
-      <!-- Авторизация -->
-      <div class="login">
-        <a class="login-view mainlink-highlight" href="#">Вход</a>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="login-form-item">
-            <label class="login-form-label">
-              <input class="login-form-field" type="email" name="login-email" placeholder="Электронная почта">
+        <!-- Поиск -->
+        <div class="search">
+          <a class="search-view mainlink-highlight" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="search-form-label">
+              <input class="search-form-field" type="search" name="search" placeholder="Что ищем?">
             </label>
-          </p>
-          <p class="login-form-item">
-            <label class="login-form-label">
-              <input class="login-form-field" type="password" name="login-password" placeholder="Пароль">
-            </label>
-          </p>
-          <button class="btn login-btn" type="submit">Войти</button>
-          <p class="login-form-links">
-            <a class="login-form-forgot link-highlight" href="#">Забыли пароль?</a>
-            <a class="login-form-signup link-highlight" href="#">Новая регистрация</a>
-          </p>
-        </form>
-      </div>
+          </form>
+        </div>
 
-      <!-- Корзина -->
-      <div class="cart">
-        <a class="cart-view mainlink-highlight" href="#">2 товара</a>
-        <table class="cart-table">
-          <caption class="cart-caption visually-hidden">Корзина товаров</caption>
-          <tr class="cart-row visually-hidden">
-            <th class="cart-header">Удалить из корзины</th>
-            <th class="cart-header">Фото товара</th>
-            <th class="cart-header">Наименование</th>
-            <th class="cart-header">Вес * цена</th>
-            <th class="cart-header">Итоговая цена</th>
-          </tr>
-          <tr class="cart-row">
-            <td class="cart-data"><button class="cart-remove-btn" type="button">Удалить</button></td>
-            <td class="cart-data"><img class="cart-item-img" src="img/orange-small.jpg" width="25" height="25" alt="Пломбир с апельсиновым джемом"></td>
-            <td class="cart-data">Пломбир с апельсиновым джемом</td>
-            <td class="cart-data">1,5 кг x <span class="price">200 руб.</span></td>
-            <td class="cart-data">300 руб.</td>
-          </tr>
-          <tr class="cart-row">
-            <td class="cart-data"><button class="cart-remove-btn" type="button">Удалить</button></td>
-            <td class="cart-data"><img class="cart-item-img" src="img/strawberry-small.jpg" width="25" height="25" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-            <td class="cart-data">Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td class="cart-data">1,5 кг x <span class="price">300 руб.</span></td>
-            <td class="cart-data">450 руб.</td>
-          </tr>
-          <tfoot class="cart-foot">
-            <tr class="cart-total">
-              <td class="cart-data" colspan="5">Итого: 750 руб.</td>
+        <!-- Авторизация -->
+        <div class="login">
+          <a class="login-view mainlink-highlight" href="#">Вход</a>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="login-form-item">
+              <label class="login-form-label">
+                <input class="login-form-field" type="email" name="login-email" placeholder="Электронная почта">
+              </label>
+            </p>
+            <p class="login-form-item">
+              <label class="login-form-label">
+                <input class="login-form-field" type="password" name="login-password" placeholder="Пароль">
+              </label>
+            </p>
+            <button class="btn login-btn" type="submit">Войти</button>
+            <p class="login-form-links">
+              <a class="login-form-forgot link-highlight" href="#">Забыли пароль?</a>
+              <a class="login-form-signup link-highlight" href="#">Новая регистрация</a>
+            </p>
+          </form>
+        </div>
+        
+        <!-- Корзина -->
+        <div class="cart">
+          <a class="cart-view mainlink-highlight" href="#">2 товара</a>
+          <table class="cart-table">
+            <caption class="cart-caption visually-hidden">Корзина товаров</caption>
+            <tr class="cart-row visually-hidden">
+              <th class="cart-header">Удалить из корзины</th>
+              <th class="cart-header">Фото товара</th>
+              <th class="cart-header">Наименование</th>
+              <th class="cart-header">Вес * цена</th>
+              <th class="cart-header">Итоговая цена</th>
             </tr>
-          </tfoot>
-        </table>
-        <a class="btn cart-checkout" href="#">Оформить заказ</a>
+            <tr class="cart-row">
+              <td class="cart-data"><button class="cart-remove-btn" type="button">Удалить</button></td>
+              <td class="cart-data"><img class="cart-item-img" src="img/orange-small.jpg" width="25" height="25" alt="Пломбир с апельсиновым джемом"></td>
+              <td class="cart-data">Пломбир с апельсиновым джемом</td>
+              <td class="cart-data">1,5 кг x <span class="price">200 руб.</span></td>
+              <td class="cart-data">300 руб.</td>
+            </tr>
+            <tr class="cart-row">
+              <td class="cart-data"><button class="cart-remove-btn" type="button">Удалить</button></td>
+              <td class="cart-data"><img class="cart-item-img" src="img/strawberry-small.jpg" width="25" height="25" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+              <td class="cart-data">Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td class="cart-data">1,5 кг x <span class="price">300 руб.</span></td>
+              <td class="cart-data">450 руб.</td>
+            </tr>
+            <tfoot class="cart-foot">
+              <tr class="cart-total">
+                <td class="cart-data" colspan="5">Итого: 750 руб.</td>
+              </tr>
+            </tfoot>
+          </table>
+          <a class="btn cart-checkout" href="#">Оформить заказ</a>
+        </div>
       </div>
 
       <!-- Время работы, телефон -->
       <p class="workinghours">
-        C 10 до 20, ежедневно
+        C 10 до 20, ежедневно<br/>
         <a class="workinghours-phone link-highlight" href="#" aria-label="Телефон магазина">8 812 450-25-25</a>
       </p>
 
