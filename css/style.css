@@ -15,74 +15,86 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto 0 auto;
 }
 
 .visually-hidden:not(:focus):not(:active) {
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  font-size: 1px;
+  position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-  overflow: hidden;
-  position: absolute;
+  border: 0;
+
+  font-size: 1px;
   white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 
+/* Подчеркивания ссылок */
+.link-highlight,
+.mainlink-highlight {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Стили хедера */
 .main-header {
   display: flex;
-
-
-  margin: 0 auto;
+  flex-wrap: wrap;
   width: 1146px;
   min-height: 125px;
-  margin-bottom: 0px; /* Временно */
-  flex-wrap: wrap;
-
-
-
-  /*outline: 1px solid blue;*/
+  margin: 0 auto;
 }
 
+/* Логотип */
 .main-header-logo {
   width: 154px;
   height: 64px;
   margin-top: 9px;
-
-  /*outline: 1px solid blue;*/
 }
 
+/* Меню навигации - размер */
 .main-navigation {
   width: 349px;
   margin-left: 14px;
-
-  /*outline: 1px solid blue;*/
 }
 
-/* Меню навигации */
+/* Сбрасывание стилей всех списков главного меню */
 .main-navigation ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/* Меню навигации - флекс-список */
 .main-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
+/* Меню навгации - ссылки-кнопки */
 .main-navigation-link {
+  position: relative;
+
   font-size: inherit;
   line-height: 18px;
   font-weight: 700;
   color: inherit;
 }
 
+/* Меню навигации - находимся на странице */
 .main-navigation-current .main-navigation-link {
   padding: 5px;
 
@@ -90,26 +102,15 @@ a {
   border-radius: 15px;
 }
 
-.catalog-subnav-item-link {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: inherit;
-  color: #323232;
-}
-
-.catalog-subnav-current a {
-  background-color: #d07058;
-  color: inherit;
-}
-
-/* Подсветка ссылок в шапке при наведении/нажатии */
+/* Меню навигации - подсветка при наведении/нажатии */
 .mainlink-highlight:hover,
 .mainlink-highlight:focus {
-  padding: 5px;
+
 
   color: #333333;
+
   background-color: #f7f6f3;
-  border-radius: 15px;
+
 }
 
 .mainlink-highlight:active {
@@ -117,7 +118,29 @@ a {
   background-color: #ededed;
 }
 
-/* Подсветка при наведении/нажатии на ссылку подменю */
+/* Подменю навигации */
+.catalog-subnav {
+  position: absolute;
+
+  display: none;
+}
+
+/* Подменю навигации - ссылки-кнопки */
+.catalog-subnav-item-link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: inherit;
+  color: #323232;
+}
+
+/* Подменю навигации - находимся на странице */
+.catalog-subnav-current a {
+  color: inherit;
+
+  background-color: #d07058;
+}
+
+/* Подменю навигации - подсветка при наведении/нажатии */
 .catalog-subnav-item-link:hover,
 .catalog-subnav-item-link:focus {
   background-color: #fbded8;
@@ -133,104 +156,98 @@ a {
   color: #ffbc9e;
 }
 
-/* Подчеркивания ссылок */
-.link-highlight,
-.mainlink-highlight {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
+/* Обертка всех меню хедера */
 .topmenu-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 982px;
-  margin: 4px 0 0 10px;
-
-
-
-  /*outline: 1px solid blue;*/
+  margin-left: 10px;
 }
 
+/* Блок поиска */
 .search {
-  width: 33px;
-  min-height: 33px;
   margin-left: auto;
-
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-
-  /*outline: 1px solid blue;*/
 }
 
-.login {
-  width: 93px;
-  min-height: 33px;
-  margin-left: 10px;
+.search-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
 
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-
-
-  /*outline: 1px solid blue;*/
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
 }
 
+/* Блок логина/корзины */
+.login,
 .cart {
-  width: 100px;
-  min-height: 33px;
   margin-left: 10px;
-
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-
-  /*outline: 1px solid blue;*/
-}
-
-.inner-page .cart {
-  width: 117px;
 }
 
 /* Стили текста логина и корзины */
 .login-view,
 .cart-view {
+  display: block;
+  position: relative;
+
+  padding: 7px 17px 8px 44px;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   color: inherit;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border: 0;
 }
 
+.login-view > svg,
+.cart-view > svg {
+  position: absolute;
+
+  top: 4px;
+  left: 17px;
+
+  width: 21px;
+  height: 21px;
+}
+
+/* Округление фото товаров в корзине */
 .cart-item-img {
   border-radius: 50%
 }
 
-/* Часы работы, телефон */
+/* Блок - часы работы, телефон */
 .workinghours {
   width: 168px;
   min-height: 48px;
   padding: 0;
-  margin: 0;
-  margin-left: auto;
-
+  margin: -5px 0 0 auto;
 
   text-align: right;
-
-
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
-
-
-  /*outline: 1px solid blue;*/
 }
 
+/* Телефон магазина - блочная ссылка */
 .workinghours-phone {
+  display: block;
+  margin-top: 4px;
+
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
   color: inherit;
+
   border: 0;
 }
 
-/* Специальные предложения */
+/* Секция "Специальные предложения" */
 .special-offers {
   display: flex;
   justify-content: space-between;
@@ -239,11 +256,6 @@ a {
   min-height: 229px;
 
   font-weight: 700;
-
-
-
-
-  /*outline: 1px solid blue;*/
 }
 
 .special-offers-title {
@@ -265,8 +277,8 @@ a {
 .special-offers-raspberry {
   width: 560px;
   min-height: 229px;
-  border-radius: 15px;
 
+  border-radius: 15px;
   background-color: #6e1a2a;
   background-image: url("../img/raspberry-background.jpg");
   background-size: cover;
@@ -277,8 +289,8 @@ a {
 .special-offers-chokolate {
   width: 560px;
   min-height: 229px;
-  border-radius: 15px;
 
+  border-radius: 15px;
   background-color: #40261a;
   background-image: url("../img/chocolate-background.jpg");
   background-size: cover;
@@ -293,9 +305,8 @@ a {
   justify-content: space-between;
   margin: -31px 0 2px 27px;
   padding: 0;
-  list-style: none;
 
-  /*outline: 1px solid blue;*/
+  list-style: none;
 }
 
 .breadcrumbs-link {
@@ -398,10 +409,6 @@ a {
   flex-wrap: wrap;
 
   list-style: none;
-
-
-
-  /*outline: 1px solid blue;*/
 }
 
 .catalog-item-card {
@@ -409,7 +416,6 @@ a {
   flex-direction: column;
   width: 267px;
   padding-bottom: 18px;
-  /*outline: 1px solid blue;*/
 }
 
 .catalog-item-name {
@@ -432,9 +438,7 @@ a {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
-  letter-spacing: ;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
-
 }
 
 .catalog-item-price .sub {
@@ -445,7 +449,6 @@ a {
 
 .catalog-item-photo {
   border-radius: 50%;
-  radius: 50%;
 }
 
 .catalog-item-hit {
@@ -488,21 +491,18 @@ a {
 /* Преимущества */
 .advantages {
   display: flex;
+  flex-direction: column;
   margin: 0 auto 39px auto;
   width: 1146px;
   min-height: 306px;
   border-radius: 15px;
-  flex-direction: column;
+
 
   background-color: #eee2c9;
   background-image: url("../img/waffle-background.jpg");
   background-size: auto;
   background-repeat: repeat;
   background-position: center;
-
-
-
-  /*outline: 1px solid blue;*/
 }
 
 .advantages-title {
@@ -521,10 +521,7 @@ a {
   padding: 0;
 
   list-style: none;
-
   color: #323232;
-
-  /*outline: 1px solid blue;*/
 }
 
 .advantages-item {
@@ -537,11 +534,6 @@ a {
   margin: 0 auto 39px auto;
   width: 1146px;
   min-height: 220px;
-
-
-
-
-  /*outline: 1px solid blue;*/
 }
 
 /* Раздел блога */
@@ -609,9 +601,6 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-
-  /*outline: 1px solid blue;*/
 }
 
 
@@ -621,35 +610,58 @@ a {
   margin: 0 auto;
   width: 1146px;
   min-height: 103px;
-
-
-
-
-  /*outline: 1px solid blue;*/
 }
 
 /* Кнопки социальных сетей */
 .footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
   width: 187px;
-  align-self: center;
 
   list-style: none;
+}
 
+.footer-social-link {
+  display: flex;
 
-  /*outline: 1px solid blue;*/
+  width: 32px;
+  height: 32px;
 
+  opacity: 0.8;
+
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
 }
 
 /* Меню по центру футера */
 .footer-menu {
-  display: flex;
-  flex-direction: column;
-  width: 370px;
-  margin: auto 0 auto 119px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  position: relative;
+  width: 304px;
+  margin: 31px 0 auto 195px;
+
   list-style: none;
+}
 
+.footer-menu::before {
+  content: "";
 
-  /*outline: 1px solid blue;*/
+  position: absolute;
+  left: 18px;
+  top: 6px;
+
+  width: 20px;
+  height: 20px;
+
+  background: url("../img/heart.svg") no-repeat 0 0;
 }
 
 .footer-menu-link {
@@ -659,22 +671,38 @@ a {
   font-weight: 400;
 }
 
+.footer-menu-documents {
+  margin-right: 55px;
+}
+
 .footer-menu-supply .footer-menu-link {
   font-weight: 700;
 }
 
 /* Копирайт */
-.footer-copyright{
+.footer-copyright {
+  position: relative;
+
   width: 190px;
-  margin: auto 0 auto auto;
+  margin: 61px 0 auto auto;
 
   color: #ffffff;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+}
 
+.footer-copyright-link::before {
+  content: "";
 
-  /*outline: 1px solid blue;*/
+  position: absolute;
+  top: -42px;
+  left: 2px;
+
+  width: 108px;
+  height: 39px;
+
+  background: url("../img/logo-htmlacademy.svg") no-repeat 0 0;
 }
 
 .footer-copyright-link {
@@ -723,10 +751,6 @@ a {
 }
 
 .cart-checkout {
-  display: none;
-}
-
-.catalog-subnav {
   display: none;
 }
 
