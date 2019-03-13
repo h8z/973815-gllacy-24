@@ -8,7 +8,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
 
+    <div class="site-wrapper">
+    <div class="site-container">
     <!-- Шапка сайта -->
     <header class="main-header">
       <!-- Логотип -->
@@ -100,16 +105,7 @@
 
         <!-- Корзина -->
         <div class="cart">
-          <a class="cart-view mainlink-highlight" href="#">
-            Пусто
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-              <g fill="#fff">
-                <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
-                <circle cx="6.984" cy="18" r="2"/>
-                <circle cx="15.984" cy="18" r="2"/>
-              </g>
-            </svg>
-          </a>
+          <a class="cart-view mainlink-highlight" href="#">Пусто</a>
         </div>
       </div>
 
@@ -120,6 +116,29 @@
       </p>
 
     </header>
+   
+    <!-- Слайдер -->
+    <section class="slider">
+      <div class="slider-controls">
+        <label for="product-1">Первый</label>
+        <label for="product-2">Второй</label>
+        <label for="product-3">Третий</label>
+      </div>
+      <ul class="slider-list">
+        <li class="slider-item slide" id="slide1">
+          <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+          <a class="btn slide-btn" href="#">Давайте оба!</a>
+        </li>
+        <li class="slider-item slide" id="slide2">
+          <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+          <a class="btn slide-btn" href="#">Давайте оба!</a>
+        </li>
+        <li class="slider-item slide" id="slide3">
+          <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+          <a class="btn slide-btn" href="#">Давайте оба!</a>
+        </li>
+      </ul>
+    </section>
 
     <!-- Мейн -->
     <main class="container">
@@ -130,12 +149,12 @@
         <article class="special-offers-raspberry">
           <h3 class="special-offers-title">Малинка даром!</h3>
           <p class="special-offers-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="btn want-jam" href="#">Хочу варенье!</a>
+          <a class="btn btn-jam" href="#">Хочу варенье!</a>
         </article>
         <article class="special-offers-chokolate">
           <h3 class="special-offers-title">Шоколадки даром!</h3>
           <p class="special-offers-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="btn want-choko" href="#">Хочу шоколадки!</a>
+          <a class="btn btn-choko" href="#">Хочу шоколадки!</a>
         </article>
       </section>
 
@@ -196,10 +215,10 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
         <p class="advantages-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul class="advantages-list">
-          <li class="abvantages-item abvantages-modern">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-          <li class="abvantages-item abvantages-natural">Для приготовления мороженого используется настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-          <li class="abvantages-item abvantages-reliability">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-          <li class="abvantages-item abvantages-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+          <li class="advantages-item advantages-modern">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="advantages-item advantages-reliability">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="advantages-item advantages-natural">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <li class="advantages-item advantages-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
 
@@ -208,14 +227,14 @@
         <article class="blog">
           <h3 class="blog-header">Новое в нашем блоге</h3>
           <p class="blog-desc">
-            <a class="link-highlight blog-desc-link" href="#">10 Способов сервировки фруктовых щербетов к столу</a>
+            <a class="link-highlight blog-desc-link" href="#">10 cпособов сервировки фруктовых щербетов к столу</a>
           </p>
         </article>
 
         <!-- Подпишись на рассылку:) -->
         <section class="subscribe">
           <h3 class="visually-hidden">Подписаться на рассылку</h3>
-            <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и слать всякой ненужной ерунды. Честно =)</p>
+            <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
               <input class="subscribe-field" type="email" id="subscribe-email" name="email" placeholder="Электронная почта">
@@ -308,6 +327,7 @@
       </form>
       <button class="feedback-close-btn" type="button">Закрыть</button>
     </section>
-
+  </div>
+  </div>
   </body>
 </html>
