@@ -92,7 +92,7 @@ img {
 /* Меню навигации - находимся на странице */
 .main-navigation-current .main-navigation-link {
   text-decoration: none;
-  
+
   background-color: #d07058;
 }
 
@@ -146,7 +146,7 @@ img {
   display: block;
 
   padding: 8px 20px;
-  
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -156,9 +156,9 @@ img {
 .catalog-subnav-item:first-child .catalog-subnav-item-link {
   padding: 11px 20px;
   margin-bottom: 2px;
-  
+
   font-weight: 700;
-  
+
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -196,6 +196,8 @@ img {
 
 /* Блок поиска */
 .search {
+  position: relative;
+
   margin-left: auto;
 }
 
@@ -208,6 +210,40 @@ img {
 
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+}
+
+.search:hover .search-form {
+  display: block;
+}
+
+.search-form {
+  position: absolute;
+  top: 36px;
+  left: -307px;
+  z-index: 30;
+
+  display: none;
+
+  padding: 20px 15px;
+  
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  
+}
+
+.search-form-field {
+    box-sizing: border-box;
+    width: 311px;
+    padding: 9px 14px;
+    
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #323232;
+
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
 }
 
 /* Блок логина/корзины */
@@ -1066,10 +1102,6 @@ img {
 }
 
 .login-form {
-  display: none;
-}
-
-.search-form {
   display: none;
 }
 
