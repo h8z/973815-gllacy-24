@@ -20,10 +20,10 @@ img {
   height: auto;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
+input::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+ }
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -40,6 +40,11 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /* Стили хедера */
@@ -185,6 +190,11 @@ img {
   color: #ffbc9e;
 }
 
+.login-form-link:hover,
+.blog-desc-link:hover {
+  color: #e84d37;
+}
+
 /* Обертка всех меню хедера */
 .topmenu-wrapper {
   display: flex;
@@ -225,34 +235,32 @@ img {
   display: none;
 
   padding: 20px 15px;
-  
+
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
-  
 }
 
 .search-form-field {
-    box-sizing: border-box;
-    width: 311px;
-    padding: 9px 14px;
-    
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #323232;
+  box-sizing: border-box;
+  width: 311px;
+  padding: 9px 14px;
 
-    border: 1px solid #d3d3d2;
-    border-radius: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
-/* Блок логина/корзины */
 .login,
 .cart {
   margin-left: 10px;
 }
 
-/* Стили текста логина и корзины */
+/* Стили логина и корзины */
 .login-view,
 .cart-view {
   display: block;
@@ -278,6 +286,69 @@ img {
 
   width: 21px;
   height: 21px;
+}
+
+.login {
+  position: relative;
+}
+
+.login:hover .login-form {
+  display: block;
+}
+
+.login-form {
+  position: absolute;
+  top: 35px;
+  left: -181px;
+  z-index: 30;
+
+  display: none;
+  box-sizing: border-box;
+  width: 277px;
+  min-height: 214px;
+  padding: 4px 18px;
+
+  background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.login-form-field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px 14px;
+  margin-bottom: 4px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.login-form-links {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-left: 17px;
+  width: 120px;
+}
+
+.login-form-link {
+  font-size: 13px;
+  line-height: 20px;
+  color: #323232;
+  text-decoration: underline;
+  text-decoration-color: rgba(50, 50, 50, 0.3);
+}
+
+.login .login-btn {
+  padding: 11px 24px 10px 24px;
+
+  border-radius: 18px;
+  box-shadow: none;
 }
 
 .cart-view::before {
@@ -889,10 +960,6 @@ img {
   text-decoration: underline;
 }
 
-.blog-desc-link:hover {
-  color: #e84d37;
-}
-
 /* Подписка на рассылку */
 .subscribe {
   display: flex;
@@ -925,7 +992,7 @@ img {
   padding: 12px 15px;
 
   border-radius: 5px;
-  border: solid 1px rgba(178, 178, 178, 0.52);
+  border: 1px solid #d3d3d2;
 }
 
 .subscribe .subscribe-btn {
@@ -1098,10 +1165,6 @@ img {
 /* Пока спрячу это здесь */
 
 .feedback {
-  display: none;
-}
-
-.login-form {
   display: none;
 }
 
