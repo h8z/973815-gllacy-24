@@ -37,13 +37,21 @@ img {
   overflow: hidden;
 }
 
-.slider-radio-hidden {
+.checkbox-radio-hidden {
   position: absolute;
 
   width: 1px;
   height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 
-  clip: rect(0, 0, 0, 0);
+  font-size: 1px;
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 
 .placeholder-style::-webkit-input-placeholder {
@@ -165,6 +173,7 @@ img {
   line-height: 16px;
   font-weight: 400;
   color: #323232;
+  text-decoration: none;
 }
 
 .catalog-subnav-item:first-child .catalog-subnav-item-link {
@@ -700,9 +709,8 @@ img {
 }
 
 .page-title {
-  margin: 0 0 0 27px;
+  margin: 0 0 26px 27px;
   padding: 0;
-  padding-bottom: 199px;
 
   font-size: 35px;
   line-height: 41px;
@@ -711,39 +719,202 @@ img {
 
 /* Фильтры */
 .filters {
+  width: 1146px;
+  height: 171px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
 }
 
+.filters-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 910px;
+  margin-left: 13px;
+}
+
+.filters fieldset {
+  position: relative;
+
+  border: initial;
+}
+
 .filters legend {
+  position: relative;
+  top: 1px;
+  left: 17px;
+
   font-size: 14px;
   line-height: 16px;
 }
 
 .filters ul {
+  position: relative;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 9px 17px 9px 17px;
+  margin: 0;
+
   list-style: none;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
 }
 
+.filters li:first-of-type {
+  margin-left: 30px;
+}
+
+.filters label {
+  position: relative;
+  cursor: pointer;
+}
+
+.filters label::before {
+  content: "";
+
+  position: absolute;
+  left: -32px;
+  top: -2px;
+
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+/* Селект сортировки */
+
 .filters-sorting-select {
-  padding: 5px 20px 5px 8px;
+  position: relative;
+
+  padding: 8px 32px 8px 15px;
 
   color: inherit;
 
   background-color: rgba(255, 255, 255, 0.2);
-  border: 0;
-  border-radius: 25px;
+  border-radius: 50px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.filters-sorting-legend::after {
+  content: "";
+  
+  position: absolute;
+  right: -85px;
+  top: 34px;
+
+  width: 13px;
+  height: 12px;
+
+  background: url("../img/icon-down-white.svg") no-repeat 0 0;
 }
 
 .filters-sorting-select:hover {
   color: #323232;
 }
 
+.filters-sorting-select:hover .filters-sorting-legend::after{
+  background: url("../img/icon-down-black.svg") no-repeat 0 0;
+}
+
+/* Фильтр цены */
+.filters-price {
+  margin-left: -12px;
+  width: 220px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 21px;
+  padding-top: 15px;
+  padding-left: 21px;
+  padding-right: 21px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+}
+
+.range-controls .scale {
+  position: relative;
+  
+  height: 4px;
+
+  background-color: rgba(248, 247, 244, 0.5);
+}
+
+.range-controls .bar {
+  position: relative;
+  left: 23px;
+
+  width: 56.81%;
+  height: 4px;
+  background-color: #f8f7f4;
+  opacity: 1;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #f8f7f4;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 35px;
+}
+
+.range-controls .toggle-max {
+  left: 134px;
+}
+
+/* Фильтр жирности */
+.filters-fat {
+  width: 415px;
+  margin-left: -12px;
+}
+
+.filters-fat-label::before {
+  background: url("../img/radio-off.svg") no-repeat 0 0;
+}
+
+.filters-fat-radio:checked + .filters-fat-label::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+/* Чеклист наполнителей */
+.filters-fillers {
+  top: 8px;
+
+  width: 703px;
+}
+
+.filters-fillers-label::before {
+  background: url("../img/checkbox-off.svg") no-repeat 0 0;
+}
+
+.filters-fillers-radio:checked + .filters-fillers-label::before {
+  background: url("../img/checkbox-on.svg") no-repeat 0 0;
+}
+
+/* Кнопка фильтров */
 .filters-submit {
-  padding: 8px 28px;
+  margin-top: auto;
+  padding: 7px 27px;
+  box-sizing: border-box;
 
   color: inherit;
   font-weight: 500;
@@ -1309,9 +1480,5 @@ img {
 /* Пока спрячу это здесь */
 
 .feedback {
-  display: none;
-}
-
-.filters {
   display: none;
 }

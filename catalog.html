@@ -177,59 +177,70 @@
             <option value="fat-content">по жирности</option>
           </select>
         </fieldset>
+        <!-- Фильтр цены -->
+        <fieldset class="filters-price">
+          <legend class="filters-price-legend">Цена: 100 руб. – 500 руб.</legend>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+        </fieldset>
         <!-- Радио-баттон жирности -->
         <fieldset class="filters-fat">
           <legend class="filters-fat-legend">Жирность:</legend>
           <ul class="filters-fat-list">
             <li class="filters-fat-item">
               <label class="filters-fat-label">
-                <input class="filters-fat-radio" type="radio" name="filters-fat"> 0%
+                <input class="filters-fat-radio checkbox-radio-hidden" type="radio" name="filters-fat" value="0%"> 0%
               </label>
             </li>
             <li class="filters-fat-item">
               <label class="filters-fat-label">
-                <input class="filters-fat-radio" type="radio" name="filters-fat"> до 10%
+                <input class="filters-fat-radio checkbox-radio-hidden" type="radio" name="filters-fat" checked value="less 10%"> до 10%
               </label>
             </li>
             <li class="filters-fat-item">
               <label class="filters-fat-label">
-                <input class="filters-fat-radio" type="radio" name="filters-fat"> до 30%
+                <input class="filters-fat-radio checkbox-radio-hidden" type="radio" name="filters-fat" value="less 30%"> до 30%
               </label>
             </li>
             <li class="filters-fat-item">
               <label class="filters-fat-label">
-                <input class="filters-fat-radio" type="radio" name="filters-fat"> выше 30%
+                <input class="filters-fat-radio checkbox-radio-hidden" type="radio" name="filters-fat" value="more 30%"> выше 30%
               </label>
             </li>
           </ul>
         </fieldset>
         <!-- Чеклист наполнителей -->
         <fieldset class="filters-fillers">
-          <legend class="filters-fillers-legend">Наполнители</legend>
+          <legend class="filters-fillers-legend">Наполнители:</legend>
           <ul class="filters-fillers-list">
             <li class="filters-fillers-item">
               <label class="filters-fillers-label">
-                <input class="filters-fillers-checkbox" type="checkbox" name="chocolate-filler" checked>
+                <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" name="chocolate-filler" checked>
                 шоколадные</label>
             </li>
             <li class="filters-fillers-item">
               <label class="filters-fillers-label">
-                <input class="filters-fillers-checkbox" type="checkbox" name="sugar-filler" checked>
+                <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" name="sugar-filler" checked>
                 сахарные присыпки</label>
             </li>
             <li class="filters-fillers-item">
               <label class="filters-fillers-label">
-                <input class="filters-fillers-checkbox" type="checkbox" name="fruit-filler">
+                <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" name="fruit-filler">
                 фрукты</label>
             </li>
             <li class="filters-fillers-item">
               <label class="filters-fillers-label">
-                <input class="filters-fillers-checkbox" type="checkbox" name="syrup-filler">
+                <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" name="syrup-filler">
                 сиропы</label>
             </li>
             <li class="filters-fillers-item">
               <label class="filters-fillers-label">
-                <input class="filters-fillers-checkbox" type="checkbox" name="jam-filler">
+                <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" name="jam-filler">
                 джемы</label>
             </li>
           </ul>
