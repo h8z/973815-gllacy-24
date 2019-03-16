@@ -257,6 +257,8 @@ img {
 
 .login,
 .cart {
+  position: relative;
+
   margin-left: 10px;
 }
 
@@ -264,7 +266,6 @@ img {
 .login-view,
 .cart-view {
   display: block;
-  position: relative;
 
   padding: 7px 17px 8px 44px;
 
@@ -280,7 +281,7 @@ img {
 
 .cart-full {
   color: #333333;
-  
+
   background-color: #f7f6f3;
 }
 
@@ -379,9 +380,92 @@ img {
   background: url("../img/cart-red.svg") no-repeat 0 0;
 }
 
-/* Округление фото товаров в корзине */
+/* Корзина с товарами */
+.cart-full {
+  position: relative;
+}
+
+.cart:hover .cart-goods {
+  display: flex;
+}
+
+.cart-goods {
+  position: absolute;
+  top: 35px;
+  right: 0;
+
+  display: none;
+  flex-direction: column;
+  width: 540px;
+  height: 242px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cart-table {
+  width: 100%;
+
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+
+  border-collapse: collapse;
+  border-color: #999999;
+}
+
+.cart-data {
+  padding: 0 2px 17px 2px;
+
+  text-align: center;
+}
+
+.cart-data:nth-child(3) {
+  text-align: left;
+  width: 223px;
+}
+
+.cart-data:last-child {
+  text-align: left;
+}
+
+.cart-foot .cart-data {
+  padding: 16px 0;
+  margin-top: 10px;
+
+  text-align: right;
+
+  border-top: 1px solid #cccccc;
+}
+
+.cart-remove-btn {
+  width: 12px;
+  height: 13px;
+
+  background: #f8f7f4 url("../img/cross-small.svg") no-repeat center;
+  border: 0;
+}
+
 .cart-item-img {
   border-radius: 50%
+}
+
+.cart-price {
+  color: #999999;
+}
+
+.cart-total-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.cart-goods .cart-checkout {
+  margin-left: auto;
+  padding: 10px 15px;
 }
 
 /* Блок - часы работы, телефон */
@@ -1007,7 +1091,8 @@ img {
 /* Карта */
 
 .map {
-  display: flex;
+  position: relative;
+
   width: 1200px;
   height: 430px;
   margin: 0 auto;
@@ -1016,6 +1101,52 @@ img {
   background-size: cover;
 }
 
+.contacts {
+  position: absolute;
+  top: 63px;
+  right: 27px;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 302px;
+  padding: 30px 25px;
+
+  font-style: normal;
+  color: #323232;
+
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.contacts-item {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-address,
+.contacts-phone {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  font-weight: 700;
+}
+
+.contacts-address {
+  margin-bottom: 18px;
+}
+
+.contacts-phone {
+  margin: 4px 0 2px 0;
+}
+
+.contacts-btn {
+  margin-top: 25px;
+}
 
 /* Футер */
 .main-footer {
@@ -1169,14 +1300,6 @@ img {
 /* Пока спрячу это здесь */
 
 .feedback {
-  display: none;
-}
-
-.cart-table {
-  display: none;
-}
-
-.cart-checkout {
   display: none;
 }
 
