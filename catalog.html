@@ -98,36 +98,36 @@
         <!-- Корзина -->
         <div class="cart">
           <a class="cart-view cart-full mainlink-highlight" href="#">2 товара</a>
-          <table class="cart-table">
-            <caption class="cart-caption visually-hidden">Корзина товаров</caption>
-            <tr class="cart-row visually-hidden">
-              <th class="cart-header">Удалить из корзины</th>
-              <th class="cart-header">Фото товара</th>
-              <th class="cart-header">Наименование</th>
-              <th class="cart-header">Вес * цена</th>
-              <th class="cart-header">Итоговая цена</th>
-            </tr>
-            <tr class="cart-row">
-              <td class="cart-data"><button class="cart-remove-btn" type="button">Удалить</button></td>
-              <td class="cart-data"><img class="cart-item-img" src="img/orange-small.jpg" width="25" height="25" alt="Пломбир с апельсиновым джемом"></td>
-              <td class="cart-data">Пломбир с апельсиновым джемом</td>
-              <td class="cart-data">1,5 кг x <span class="price">200 руб.</span></td>
-              <td class="cart-data">300 руб.</td>
-            </tr>
-            <tr class="cart-row">
-              <td class="cart-data"><button class="cart-remove-btn" type="button">Удалить</button></td>
-              <td class="cart-data"><img class="cart-item-img" src="img/strawberry-small.jpg" width="25" height="25" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-              <td class="cart-data">Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td class="cart-data">1,5 кг x <span class="price">300 руб.</span></td>
-              <td class="cart-data">450 руб.</td>
-            </tr>
-            <tfoot class="cart-foot">
-              <tr class="cart-total">
-                <td class="cart-data" colspan="5">Итого: 750 руб.</td>
+          <div class="cart-goods">
+            <table class="cart-table">
+              <caption class="cart-caption visually-hidden">Корзина товаров</caption>
+              <thead class="cart-row visually-hidden">
+                <th class="cart-header">Удалить из корзины</th>
+                <th class="cart-header">Фото товара</th>
+                <th class="cart-header">Наименование</th>
+                <th class="cart-header">Цена товара</th>
+                <th class="cart-header">Итоговая цена</th>
+              </thead>
+              <tbody class="cart-row">
+                <td class="cart-data"><button class="cart-remove-btn" type="button"><span class="visually-hidden">Удалить</span></button></td>
+                <td class="cart-data"><img class="cart-item-img" src="img/orange-small.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                <td class="cart-data">Пломбир с апельсиновым джемом</td>
+                <td class="cart-data">1,5 кг x <span class="cart-price">200 руб.</span></td>
+                <td class="cart-data">300 руб.</td>
               </tr>
-            </tfoot>
-          </table>
-          <a class="btn cart-checkout" href="#">Оформить заказ</a>
+              <tbody class="cart-row">
+                <td class="cart-data"><button class="cart-remove-btn" type="button"><span class="visually-hidden">Удалить</span></button></td>
+                <td class="cart-data"><img class="cart-item-img" src="img/strawberry-small.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                <td class="cart-data">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="cart-data">1,5 кг x <span class="cart-price">300 руб.</span></td>
+                <td class="cart-data">450 руб.</td>
+              </tbody>
+              <tfoot class="cart-foot">
+                <td class="cart-data" colspan="5"><span class="cart-total-price">Итого: 750 руб.</span></td>
+              </tfoot>
+            </table>
+            <a class="btn cart-checkout" href="#">Оформить заказ</a>
+          </div>
         </div>
       </div>
 
