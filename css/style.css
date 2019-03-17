@@ -148,7 +148,7 @@ img {
 /* Подменю навигации */
 .catalog-subnav {
   position: absolute;
-  z-index: 30;
+  z-index: 2;
 
   display: none;
   top: 38px;
@@ -248,7 +248,7 @@ img {
   position: absolute;
   top: 36px;
   left: -307px;
-  z-index: 30;
+  z-index: 2;
 
   display: none;
 
@@ -325,7 +325,7 @@ img {
   position: absolute;
   top: 35px;
   left: -181px;
-  z-index: 30;
+  z-index: 2;
 
   display: none;
   box-sizing: border-box;
@@ -586,7 +586,7 @@ img {
   position: absolute;
   bottom: 23px;
   left: 28px;
-  z-index: 20;
+  z-index: 1;
 
   font-size: 0;
 }
@@ -751,7 +751,7 @@ img {
 
 .filters ul {
   position: relative;
-  
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -803,7 +803,7 @@ img {
 
 .filters-sorting-legend::after {
   content: "";
-  
+
   position: absolute;
   right: -85px;
   top: 34px;
@@ -842,7 +842,7 @@ img {
 
 .range-controls .scale {
   position: relative;
-  
+
   height: 4px;
 
   background-color: rgba(248, 247, 244, 0.5);
@@ -862,7 +862,7 @@ img {
   position: absolute;
   top: 7px;
   left: 0;
-  
+
   width: 4px;
   height: 4px;
   padding: 0;
@@ -1477,8 +1477,87 @@ img {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-/* Пока спрячу это здесь */
-
+/* Модальное окно */
 .feedback {
-  display: none;
+  position: fixed;
+  top: 337px;
+  left: 50%;
+  z-index: 4;
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+  width: 428px;
+  height: 409px;
+  padding: 17px 25px;
+  margin-left: -220px;
+
+  border-radius: 10px;
+  background-color: #f8f7f4;
+}
+
+.feedback-close-btn {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+
+  width: 18px;
+  height: 17px;
+
+  font-size: 0;
+
+  border: 0;
+  background: #f8f7f4 url("../img/cross-big.svg") no-repeat 0 0;
+  
+  cursor: pointer;
+}
+
+.feedback-title {
+  margin: 0;
+  margin-bottom: 3px;
+
+  font-size: 24px;
+  line-height: 1.17;
+  font-weight: 500;
+
+  color: #323232;
+}
+
+.feedback-name-field,
+.feedback-email-field {
+  width: 55%;
+  padding: 12px 14px;
+  margin-bottom: 4px;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.feedback-message-area {
+  width: 93%;
+  height: 130px;
+  padding: 12px 14px;
+  resize: none;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.feedback-btn {
+  padding: 10px 24px;
+  margin: 17px 0 0 290px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
 }
