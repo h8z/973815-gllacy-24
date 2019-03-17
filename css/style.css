@@ -643,14 +643,15 @@ img {
 }
 
 .special-offers-title {
-  margin: 16px 0 0 18px;
+  margin: 0;
+  margin-bottom: 15px;
 
   font-size: 35px;
   line-height: 41px;
 }
 
 .special-offers-desc {
-  margin: 15px 19px;
+  margin: 0;
 
   font-size: 18px;
   line-height: 22px;
@@ -662,32 +663,31 @@ img {
   color: inherit;
 }
 
-.special-offers-raspberry {
-  width: 560px;
-  min-height: 229px;
-
+.special-offers article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 522px;
+  min-height: 197px;
+  padding: 16px 19px;
+  
   border-radius: 15px;
+  background-size: cover;
+}
+
+.special-offers-raspberry {
   background-color: #6e1a2a;
   background: url("../img/raspberry-background.jpg") no-repeat center;
-  background-size: cover;
 }
 
 .special-offers-chokolate {
-  width: 560px;
-  min-height: 229px;
-
-  border-radius: 15px;
   background-color: #40261a;
   background: url("../img/chocolate-background.jpg") no-repeat center;
-  background-size: cover;
 }
 
-.btn-choko {
-  margin: 30px 0 0 350px;
-}
-
+.btn-choko,
 .btn-jam {
-  margin: 30px 0 0 375px;
+  margin: auto 0 8px auto;
 }
 
 /* Хлебные крошки */
@@ -773,18 +773,6 @@ img {
   cursor: pointer;
 }
 
-.filters label::before {
-  content: "";
-
-  position: absolute;
-  left: -32px;
-  top: -2px;
-
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-}
-
 /* Селект сортировки */
 
 .filters-sorting-select {
@@ -818,7 +806,7 @@ img {
   color: #323232;
 }
 
-.filters-sorting-select:hover .filters-sorting-legend::after{
+.filters-sorting-select:hover + .filters-sorting-legend::after{
   background: url("../img/icon-down-black.svg") no-repeat 0 0;
 }
 
@@ -888,7 +876,19 @@ img {
 }
 
 .filters-fat-label::before {
+  content: "";
+
+  position: absolute;
+  left: -32px;
+  top: -1px;
+
+  width: 26px;
+  height: 26px;
+  
   background: url("../img/radio-off.svg") no-repeat 0 0;
+  background-size: 85%;
+
+  cursor: pointer;
 }
 
 .filters-fat-radio:checked + .filters-fat-label::before {
@@ -903,7 +903,19 @@ img {
 }
 
 .filters-fillers-label::before {
+  content: "";
+
+  position: absolute;
+  left: -32px;
+  top: 0px;
+
+  width: 26px;
+  height: 26px;
+  
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
+  background-size: 77%;
+
+  cursor: pointer;
 }
 
 .filters-fillers-radio:checked + .filters-fillers-label::before {
@@ -967,6 +979,10 @@ img {
 
 .catalog-item {
   margin-right: 26px;
+}
+
+.catalog-item:hover {
+
 }
 
 .catalog-item:nth-child(4n) {
@@ -1204,8 +1220,9 @@ img {
 
 /* Раздел блога */
 .blog {
-  width: 560px;
-  min-height: 220px;
+  width: 520px;
+  min-height: 172px;
+  padding: 24px 20px;
 
   color: #323232;
 
@@ -1215,17 +1232,20 @@ img {
 }
 
 .blog-header {
-  margin: 24px 0px 0px 20px;
+  margin: 0;
 
   font-size: inherit;
   line-height: inherit;
   font-weight: 500;
 }
 
+.blog-desc {
+  margin-top: 5px;
+}
+
 .blog-desc-link {
   display: block;
 
-  margin: -12px 0px 0px 20px;
   width: 285px;
 
   color: inherit;
@@ -1271,7 +1291,7 @@ img {
 }
 
 .subscribe .subscribe-btn {
-  margin: 35px 0 0 8px;
+  margin: 35px 0 36px 8px;
   padding: 10px 19px 10px 19px;
 }
 
@@ -1492,9 +1512,6 @@ img {
   z-index: 4;
 
   display: none;
-  flex-wrap: wrap;
-  flex-direction: column;
-
   width: 428px;
   min-height: 409px;
   padding: 17px 25px;
@@ -1522,7 +1539,7 @@ img {
 
 .feedback-title {
   margin: 0;
-  margin-bottom: 3px;
+  margin-bottom: 20px;
 
   font-size: 24px;
   line-height: 1.17;
