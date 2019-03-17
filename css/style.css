@@ -148,7 +148,7 @@ img {
 /* Подменю навигации */
 .catalog-subnav {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
 
   display: none;
   top: 38px;
@@ -248,7 +248,7 @@ img {
   position: absolute;
   top: 36px;
   left: -307px;
-  z-index: 2;
+  z-index: 5;
 
   display: none;
 
@@ -325,7 +325,7 @@ img {
   position: absolute;
   top: 35px;
   left: -181px;
-  z-index: 2;
+  z-index: 5;
 
   display: none;
   box-sizing: border-box;
@@ -586,7 +586,7 @@ img {
   position: absolute;
   bottom: 23px;
   left: 28px;
-  z-index: 1;
+  z-index: 4;
 
   font-size: 0;
 }
@@ -670,7 +670,7 @@ img {
   width: 522px;
   min-height: 197px;
   padding: 16px 19px;
-  
+
   border-radius: 15px;
   background-size: cover;
 }
@@ -884,7 +884,7 @@ img {
 
   width: 26px;
   height: 26px;
-  
+
   background: url("../img/radio-off.svg") no-repeat 0 0;
   background-size: 85%;
 
@@ -911,7 +911,7 @@ img {
 
   width: 26px;
   height: 26px;
-  
+
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
   background-size: 77%;
 
@@ -978,11 +978,37 @@ img {
 }
 
 .catalog-item {
+  position: relative;
   margin-right: 26px;
 }
 
-.catalog-item:hover {
+.catalog-item::before {
+  content: "";
 
+  position: absolute;
+  top: -6px;
+  left: -13px;
+  z-index: 1;
+
+  display: none;
+  width: 293px;
+  height: 405px;
+
+  background-color: rgba(248, 247, 244, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.catalog-item:hover::before,
+.catalog-item:focus::before,
+.catalog-item:active::before {
+  display: block;
+  z-index: -1;
+}
+
+.catalog-item:hover {
+  position: relative;
+  z-index: 1;
 }
 
 .catalog-item:nth-child(4n) {
@@ -1008,6 +1034,22 @@ img {
   line-height: 22px;
   color: inherit;
   font-weight: 500;
+}
+
+.catalog-item-card .catalog-item-btn {
+  position: absolute;
+  top: 333px;
+  left: 33px;
+  z-index: 1;
+
+  display: none;
+  padding: 10px 17px;
+}
+
+.catalog-item:hover .catalog-item-btn,
+.catalog-item:hover .catalog-item-btn,
+.catalog-item:hover .catalog-item-btn {
+  display: block;
 }
 
 .catalog-item-price {
@@ -1509,7 +1551,7 @@ img {
   position: fixed;
   top: 337px;
   left: 50%;
-  z-index: 4;
+  z-index: 10;
 
   display: none;
   width: 428px;
@@ -1577,7 +1619,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 9;
 
   display: none;
   width: 100%;
