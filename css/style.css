@@ -1786,6 +1786,10 @@ img {
   margin: 17px 0 0 290px;
 }
 
+.feedback-visible {
+  display: block;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -1797,4 +1801,8 @@ img {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.overlay-visible {
+  display: block;
 }
