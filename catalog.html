@@ -55,7 +55,7 @@
 
       <!-- Поиск -->
       <div class="search">
-        <a class="search-view mainlink-highlight" href="#">
+        <a class="search-view mainlink-highlight" href="search.html">
           <span class="visually-hidden">Поиск</span>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17"
             viewBox="0 0 17 17">
@@ -72,7 +72,7 @@
 
       <!-- Авторизация -->
       <div class="login">
-        <a class="login-view mainlink-highlight" href="#">
+        <a class="login-view mainlink-highlight" href="login.html">
           Вход
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19"
             viewBox="0 0 21 19">
@@ -105,7 +105,7 @@
 
       <!-- Корзина -->
       <div class="cart">
-        <a class="cart-view cart-full mainlink-highlight" href="#">2 товара</a>
+        <a class="cart-view cart-full mainlink-highlight" href="cart.html">2 товара</a>
         <div class="cart-goods">
           <table class="cart-table">
             <caption class="cart-caption visually-hidden">Корзина товаров</caption>
@@ -158,7 +158,7 @@
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item"><a class="breadcrumbs-link link-highlight" href="index.html">Главная</a></li>
       <li class="breadcrumbs-item"><a class="breadcrumbs-link link-highlight" href="#">Каталог</a></li>
-      <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-current" href="#">Сливочное</a></li>
+      <li class="breadcrumbs-item">Сливочное</li>
     </ul>
 
     <h1 class="page-title">Сливочное мороженое</h1>
@@ -169,13 +169,13 @@
       <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
         <!-- Селект сортировки -->
         <fieldset class="filters-sorting">
-          <legend class="filters-sorting-legend">Сортировка:</legend>
           <select class="filters-sorting-select" name="filters-sorting">
             <option value="popularity">по популярности</option>
             <option value="inexpensive">сначала недорогие</option>
             <option value="expensive">сначала дорогие</option>
             <option value="fat-content">по жирности</option>
           </select>
+          <legend class="filters-sorting-legend">Сортировка:</legend>
         </fieldset>
         <!-- Фильтр цены -->
         <fieldset class="filters-price">
@@ -184,8 +184,8 @@
             <div class="scale">
               <div class="bar"></div>
             </div>
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
           </div>
         </fieldset>
         <!-- Радио-баттон жирности -->
@@ -193,24 +193,24 @@
           <legend class="filters-fat-legend">Жирность:</legend>
           <ul class="filters-fat-list">
             <li class="filters-fat-item">
-              <label class="filters-fat-label">
-                <input class="filters-fat-radio checkbox-radio-hidden" type="radio" name="filters-fat" value="0%"> 0%
-              </label>
+              <input class="filters-fat-radio checkbox-radio-hidden" type="radio" id="fat-0" name="filters-fat"
+                value="0%">
+              <label class="filters-fat-label" for="fat-0"> 0%</label>
             </li>
             <li class="filters-fat-item">
-              <label class="filters-fat-label">
-                <input class="filters-fat-radio checkbox-radio-hidden" type="radio" name="filters-fat" checked value="less 10%"> до 10%
-              </label>
+              <input class="filters-fat-radio checkbox-radio-hidden" type="radio" id="fat-less-10" name="filters-fat"
+                checked value="less 10%">
+              <label class="filters-fat-label" for="fat-less-10">до 10%</label>
             </li>
             <li class="filters-fat-item">
-              <label class="filters-fat-label">
-                <input class="filters-fat-radio checkbox-radio-hidden" type="radio" name="filters-fat" value="less 30%"> до 30%
-              </label>
+              <input class="filters-fat-radio checkbox-radio-hidden" type="radio" id="fat-less-30" name="filters-fat"
+                value="less 30%">
+              <label class="filters-fat-label" for="fat-less-30">до 30%</label>
             </li>
             <li class="filters-fat-item">
-              <label class="filters-fat-label">
-                <input class="filters-fat-radio checkbox-radio-hidden" type="radio" name="filters-fat" value="more 30%"> выше 30%
-              </label>
+              <input class="filters-fat-radio checkbox-radio-hidden" type="radio" id="fat-more-30" name="filters-fat"
+                value="more 30%">
+              <label class="filters-fat-label" for="fat-more-30">выше 30%</label>
             </li>
           </ul>
         </fieldset>
@@ -219,29 +219,29 @@
           <legend class="filters-fillers-legend">Наполнители:</legend>
           <ul class="filters-fillers-list">
             <li class="filters-fillers-item">
-              <label class="filters-fillers-label">
-                <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" name="chocolate-filler" checked>
-                шоколадные</label>
+              <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" id="fill-choko"
+                name="chocolate-filler" checked>
+              <label class="filters-fillers-label" for="fill-choko">шоколадные</label>
             </li>
             <li class="filters-fillers-item">
-              <label class="filters-fillers-label">
-                <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" name="sugar-filler" checked>
-                сахарные присыпки</label>
+              <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" id="fill-sugar"
+                name="sugar-filler" checked>
+              <label class="filters-fillers-label" for="fill-sugar">сахарные присыпки</label>
             </li>
             <li class="filters-fillers-item">
-              <label class="filters-fillers-label">
-                <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" name="fruit-filler">
-                фрукты</label>
+              <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" id="fill-fruit"
+                name="fruit-filler">
+              <label class="filters-fillers-label" for="fill-fruit">фрукты</label>
             </li>
             <li class="filters-fillers-item">
-              <label class="filters-fillers-label">
-                <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" name="syrup-filler">
-                сиропы</label>
+              <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" id="fill-syrop"
+                name="syrup-filler">
+              <label class="filters-fillers-label" for="fill-syrop">сиропы</label>
             </li>
             <li class="filters-fillers-item">
-              <label class="filters-fillers-label">
-                <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" name="jam-filler">
-                джемы</label>
+              <input class="filters-fillers-checkbox checkbox-radio-hidden" type="checkbox" id="fill-jam"
+                name="jam-filler">
+              <label class="filters-fillers-label" for="fill-jam">джемы</label>
             </li>
           </ul>
         </fieldset>
@@ -437,7 +437,7 @@
     <!-- Кнопки социальных сетей -->
     <ul class="footer-social">
       <li class="footer-social-icon">
-        <a class="footer-social-link" href="#">
+        <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
           <span class="twitter visually-hidden">Твиттер</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <path fill="#FFF"
@@ -446,7 +446,7 @@
         </a>
       </li>
       <li class="footer-social-icon">
-        <a class="footer-social-link" href="#">
+        <a class="footer-social-link" href="https://www.instagram.com/htmlacademy/">
           <span class="instagram visually-hidden">Инстаграм</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <g fill="#FFF">
@@ -461,7 +461,7 @@
         </a>
       </li>
       <li class="footer-social-icon">
-        <a class="footer-social-link" href="#">
+        <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
           <span class="facebook visually-hidden">Фейсбук</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <path fill="#FFF"
@@ -470,7 +470,7 @@
         </a>
       </li>
       <li class="footer-social-icon">
-        <a class="footer-social-link" href="#">
+        <a class="footer-social-link" href="https://vk.com/htmlacademy">
           <span class="vkontakte visually-hidden">Вконтакте</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <g fill="#FFF">
