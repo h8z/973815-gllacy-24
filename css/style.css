@@ -740,7 +740,8 @@ img {
 
 .btn-choko,
 .btn-jam {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin: auto 0 8px auto;
 }
 
@@ -846,18 +847,31 @@ img {
 /* Селект сортировки */
 
 .filters-sorting-select {
+  position: relative;
+  top: 16px;
+
   padding: 8px 32px 8px 15px;
 
   color: inherit;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
+  border: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.filters-sorting-legend::after {
+.filters-sorting .filters-sorting-label {
+  position: absolute;
+  top: 0;
+  left: 28px;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filters-sorting-label::after {
   content: "";
 
   position: absolute;
@@ -874,7 +888,7 @@ img {
   color: #323232;
 }
 
-.filters-sorting-select:hover + .filters-sorting-legend::after {
+.filters-sorting-select:hover + .filters-sorting-label::after {
   background: url("../img/icon-down-black.svg") no-repeat 0 0;
 }
 
@@ -1005,7 +1019,8 @@ img {
 
 /* Кнопка фильтров */
 .filters-submit {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin-top: auto;
   padding: 7px 27px;
   -webkit-box-sizing: border-box;
@@ -1187,7 +1202,8 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 
   padding: 0;
   margin: 45px 0 30px auto;
