@@ -6,13 +6,13 @@
   <title>Магазин мороженого «Глэйси»</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <input class="checkbox-radio-hidden" type="radio" id="product-1" name="toggle" checked>
-  <input class="checkbox-radio-hidden" type="radio" id="product-2" name="toggle">
-  <input class="checkbox-radio-hidden" type="radio" id="product-3" name="toggle">
+  <input class="checkbox-radio-hidden slider-1" type="radio" id="product-1" name="toggle" checked>
+  <input class="checkbox-radio-hidden slider-2" type="radio" id="product-2" name="toggle">
+  <input class="checkbox-radio-hidden slider-3" type="radio" id="product-3" name="toggle">
 
   <div class="site-wrapper">
     <div class="site-container">
@@ -265,7 +265,7 @@
             <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
               <input class="subscribe-field placeholder-style" type="email" id="subscribe-email" name="email"
-                placeholder="Электронная почта">
+                placeholder="Электронная почта" required>
               <button class="btn subscribe-btn" type="submit">Отправить</button>
             </form>
           </section>
@@ -274,7 +274,7 @@
     </div>
 
       <div class="map">
-        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32445287633267!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552860715264" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32445287633267!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552860715264" allowfullscreen></iframe>
         <address class="contacts">
           <p class="contacts-item">Адрес главного офиса <br />и офлайн-магазина:</p>
           <p class="contacts-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -382,7 +382,7 @@
       </section>
     <div class="overlay"></div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
